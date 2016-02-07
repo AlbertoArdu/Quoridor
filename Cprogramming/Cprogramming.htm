@@ -1,0 +1,1022 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+<title>Static Call Graph - [.\Cprogramming.axf]</title></head>
+<body><HR>
+<H1>Static Call Graph for image .\Cprogramming.axf</H1><HR>
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5.03 [Build 76]: Last Updated: Sat Jan 17 13:55:03 2015
+<BR><P>
+<H3>Maximum Stack Usage =        616 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
+Call chain for Maximum Stack Depth:</H3>
+main &rArr; scegli_muro &rArr; prova_muro &rArr; controllo_muro &rArr; percorso_minimo &rArr; visitaAmpiezza &rArr; putItem &rArr; __aeabi_idivmod
+<P>
+<H3>
+Functions with no stack information
+</H3><UL>
+ <LI><a href="#[3]">Reset_Handler</a>
+ <LI><a href="#[70]">__user_initial_stackheap</a>
+ <LI><a href="#[4]">Undef_Handler</a>
+ <LI><a href="#[5]">SWI_Handler</a>
+ <LI><a href="#[6]">PAbt_Handler</a>
+ <LI><a href="#[7]">DAbt_Handler</a>
+</UL>
+</UL>
+<P>
+<H3>
+Mutually Recursive functions
+</H3> <LI><a href="#[4]">Undef_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[4]">Undef_Handler</a><BR>
+ <LI><a href="#[5]">SWI_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[5]">SWI_Handler</a><BR>
+ <LI><a href="#[6]">PAbt_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[6]">PAbt_Handler</a><BR>
+ <LI><a href="#[7]">DAbt_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[7]">DAbt_Handler</a><BR>
+</UL>
+<P>
+<H3>
+Function Pointers
+</H3><UL>
+ <LI><a href="#[7]">DAbt_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[9]">FIQ_Handler</a> from main.o(.text) referenced from startup.o(RESET)
+ <LI><a href="#[8]">IRQ_Handler</a> from main.o(.text) referenced from startup.o(RESET)
+ <LI><a href="#[6]">PAbt_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[3]">Reset_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[5]">SWI_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[4]">Undef_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[c]">__main</a> from __main.o(!!!main) referenced from startup.o(RESET)
+ <LI><a href="#[b]">main</a> from main.o(.text) referenced from rtentry2.o(.ARM.Collect$$rtentry$$0000000D)
+</UL>
+<P>
+<H3>
+Global Symbols
+</H3>
+<P><STRONG><a name="[3]"></a>Reset_Handler</STRONG> (ARM, 0 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[c]"></a>__main</STRONG> (ARM, 8 bytes, Stack size 0 bytes, __main.o(!!!main))
+<BR><BR>[Calls]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
+<LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[d]"></a>__scatterload</STRONG> (ARM, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter))
+<BR><BR>[Called By]<UL><LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+</UL>
+
+<P><STRONG><a name="[f]"></a>__scatterload_rt2</STRONG> (ARM, 52 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
+</UL>
+
+<P><STRONG><a name="[73]"></a>__scatterload_null</STRONG> (ARM, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+
+<P><STRONG><a name="[10]"></a>__scatterload_copy</STRONG> (ARM, 40 bytes, Stack size unknown bytes, __scatter_copy.o(!!handler_copy), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
+</UL>
+
+<P><STRONG><a name="[74]"></a>__scatterload_zeroinit</STRONG> (ARM, 44 bytes, Stack size unknown bytes, __scatter_zi.o(!!handler_zi), UNUSED)
+
+<P><STRONG><a name="[14]"></a>__rt_lib_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit.o(.ARM.Collect$$libinit$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_li (via Veneer)
+</UL>
+
+<P><STRONG><a name="[75]"></a>__rt_lib_init_alloca_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002C))
+
+<P><STRONG><a name="[76]"></a>__rt_lib_init_argv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002A))
+
+<P><STRONG><a name="[77]"></a>__rt_lib_init_atexit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000019))
+
+<P><STRONG><a name="[78]"></a>__rt_lib_init_clock_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001F))
+
+<P><STRONG><a name="[79]"></a>__rt_lib_init_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000030))
+
+<P><STRONG><a name="[7a]"></a>__rt_lib_init_exceptions_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002E))
+
+<P><STRONG><a name="[7b]"></a>__rt_lib_init_fp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000002))
+
+<P><STRONG><a name="[7c]"></a>__rt_lib_init_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001D))
+
+<P><STRONG><a name="[7d]"></a>__rt_lib_init_getenv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000021))
+
+<P><STRONG><a name="[7e]"></a>__rt_lib_init_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000008))
+
+<P><STRONG><a name="[7f]"></a>__rt_lib_init_lc_collate_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000F))
+
+<P><STRONG><a name="[80]"></a>__rt_lib_init_lc_ctype_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000011))
+
+<P><STRONG><a name="[81]"></a>__rt_lib_init_lc_monetary_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000013))
+
+<P><STRONG><a name="[82]"></a>__rt_lib_init_lc_numeric_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000015))
+
+<P><STRONG><a name="[83]"></a>__rt_lib_init_lc_time_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000017))
+
+<P><STRONG><a name="[84]"></a>__rt_lib_init_rand_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000C))
+
+<P><STRONG><a name="[85]"></a>__rt_lib_init_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000031))
+
+<P><STRONG><a name="[86]"></a>__rt_lib_init_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001B))
+
+<P><STRONG><a name="[87]"></a>__rt_lib_init_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000023))
+
+<P><STRONG><a name="[88]"></a>__rt_lib_init_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000A))
+
+<P><STRONG><a name="[18]"></a>__rt_lib_shutdown</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown.o(.ARM.Collect$$libshutdown$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_ls (via Veneer)
+</UL>
+
+<P><STRONG><a name="[89]"></a>__rt_lib_shutdown_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000006))
+
+<P><STRONG><a name="[8a]"></a>__rt_lib_shutdown_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000E))
+
+<P><STRONG><a name="[8b]"></a>__rt_lib_shutdown_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F))
+
+<P><STRONG><a name="[8c]"></a>__rt_lib_shutdown_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000009))
+
+<P><STRONG><a name="[8d]"></a>__rt_lib_shutdown_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000003))
+
+<P><STRONG><a name="[8e]"></a>__rt_lib_shutdown_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000B))
+
+<P><STRONG><a name="[e]"></a>__rt_entry</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtentry.o(.ARM.Collect$$rtentry$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+<LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_rt2
+</UL>
+
+<P><STRONG><a name="[8f]"></a>__rt_entry_presh_1</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$00000002))
+
+<P><STRONG><a name="[11]"></a>__rt_entry_sh</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtentry4.o(.ARM.Collect$$rtentry$$00000004))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
+<LI>Call Chain = __rt_entry_sh &rArr; __user_setup_stackheap
+</UL>
+<BR>[Calls]<UL><LI><a href="#[12]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
+</UL>
+
+<P><STRONG><a name="[13]"></a>__rt_entry_li</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$0000000A))
+<BR><BR>[Calls]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[90]"></a>__rt_entry_postsh_1</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$00000009))
+
+<P><STRONG><a name="[15]"></a>__rt_entry_main</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$0000000D))
+<BR><BR>[Calls]<UL><LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit (via BX)
+</UL>
+
+<P><STRONG><a name="[91]"></a>__rt_entry_postli_1</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$0000000C))
+
+<P><STRONG><a name="[72]"></a>__rt_exit</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtexit.o(.ARM.Collect$$rtexit$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit (via Veneer)
+</UL>
+
+<P><STRONG><a name="[17]"></a>__rt_exit_ls</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000003))
+<BR><BR>[Calls]<UL><LI><a href="#[18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_shutdown (via Veneer)
+</UL>
+
+<P><STRONG><a name="[92]"></a>__rt_exit_prels_1</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000002))
+
+<P><STRONG><a name="[19]"></a>__rt_exit_exit</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000004))
+<BR><BR>[Calls]<UL><LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_exit (via Veneer)
+</UL>
+
+<P><STRONG><a name="[70]"></a>__user_initial_stackheap</STRONG> (ARM, 0 bytes, Stack size unknown bytes, startup.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[12]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
+</UL>
+
+<P><STRONG><a name="[22]"></a>muriInfo</STRONG> (ARM, 216 bytes, Stack size 8 bytes, main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = muriInfo
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;s9_control
+<LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;infoInit
+</UL>
+
+<P><STRONG><a name="[1e]"></a>controlla_vittoria</STRONG> (ARM, 60 bytes, Stack size 0 bytes, main.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;s9_control
+<LI><a href="#[1b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inviaMossa
+<LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FIQ_Handler
+</UL>
+
+<P><STRONG><a name="[1b]"></a>inviaMossa</STRONG> (ARM, 272 bytes, Stack size 16 bytes, main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = inviaMossa &rArr; scriviUart &rArr; prelevaBuffer &rArr; __aeabi_idivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scriviUart
+<LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;putcXY
+<LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdPrintDx
+<LI><a href="#[1c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inserisciBuffer
+<LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;controlla_vittoria
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;s9_control
+<LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[36]"></a>avantiPedina</STRONG> (ARM, 48 bytes, Stack size 0 bytes, main.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[21]"></a>infoInit</STRONG> (ARM, 84 bytes, Stack size 16 bytes, main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = infoInit &rArr; muriInfo
+</UL>
+<BR>[Calls]<UL><LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;muriInfo
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[28]"></a>creaGriglia</STRONG> (ARM, 212 bytes, Stack size 12 bytes, main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = creaGriglia
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[b]"></a>main</STRONG> (ARM, 1008 bytes, Stack size 200 bytes, main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 616<LI>Call Chain = main &rArr; scegli_muro &rArr; prova_muro &rArr; controllo_muro &rArr; percorso_minimo &rArr; visitaAmpiezza &rArr; putItem &rArr; __aeabi_idivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+<LI><a href="#[2c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;settaFaseIniziale
+<LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scegli_muro
+<LI><a href="#[2e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
+<LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;piazzaMuro
+<LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;percorso_minimo
+<LI><a href="#[29]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdStart
+<LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdPrintSxUP
+<LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdPrintDx
+<LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_timer
+<LI><a href="#[30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_gioco
+<LI><a href="#[34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_countdown
+<LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initUart
+<LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disegnaPedina
+<LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;controlla_mossa
+<LI><a href="#[2b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bufferInit
+<LI><a href="#[23]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TargetResetInit
+<LI><a href="#[24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PortInit
+<LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedSet
+<LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Clear_Left
+<LI><a href="#[2a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Clear
+<LI><a href="#[25]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ExternalInterruptInit
+<LI><a href="#[28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;creaGriglia
+<LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;infoInit
+<LI><a href="#[36]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;avantiPedina
+<LI><a href="#[1b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inviaMossa
+<LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;muriInfo
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> rtentry2.o(.ARM.Collect$$rtentry$$0000000D)
+</UL>
+<P><STRONG><a name="[8]"></a>IRQ_Handler</STRONG> (ARM, 112 bytes, Stack size 8 bytes, main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = IRQ_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[3a]"></a>decisioneColore</STRONG> (ARM, 208 bytes, Stack size 8 bytes, main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = decisioneColore &rArr; prelevaBuffer &rArr; __aeabi_idivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scriviUartChar
+<LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prelevaBuffer
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FIQ_Handler
+</UL>
+
+<P><STRONG><a name="[3d]"></a>s4_control</STRONG> (ARM, 160 bytes, Stack size 8 bytes, main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = s4_control &rArr; scriviUart &rArr; prelevaBuffer &rArr; __aeabi_idivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scriviUart
+<LI><a href="#[1c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inserisciBuffer
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FIQ_Handler
+</UL>
+
+<P><STRONG><a name="[3e]"></a>s9_control</STRONG> (ARM, 340 bytes, Stack size 8 bytes, main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 308<LI>Call Chain = s9_control &rArr; controlla_mossa &rArr; set_pedina &rArr; muoviPedina &rArr; rimuoviPedina
+</UL>
+<BR>[Calls]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;restart_countdown
+<LI><a href="#[2e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
+<LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;piazzaMuro
+<LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdPrintSxUP
+<LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;controlla_mossa
+<LI><a href="#[1b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inviaMossa
+<LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;controlla_vittoria
+<LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;muriInfo
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FIQ_Handler
+</UL>
+
+<P><STRONG><a name="[40]"></a>s8_control</STRONG> (ARM, 620 bytes, Stack size 8 bytes, main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 260<LI>Call Chain = s8_control &rArr; muoviPedina &rArr; rimuoviPedina
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
+<LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;muoviPedina
+<LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;muoviMuro
+<LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdPrintDx
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FIQ_Handler
+</UL>
+
+<P><STRONG><a name="[43]"></a>s7_control</STRONG> (ARM, 796 bytes, Stack size 8 bytes, main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 260<LI>Call Chain = s7_control &rArr; muoviPedina &rArr; rimuoviPedina
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
+<LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;muoviPedina
+<LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;muoviMuro
+<LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdPrintDx
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FIQ_Handler
+</UL>
+
+<P><STRONG><a name="[44]"></a>s6_control</STRONG> (ARM, 620 bytes, Stack size 8 bytes, main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 260<LI>Call Chain = s6_control &rArr; muoviPedina &rArr; rimuoviPedina
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
+<LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;muoviPedina
+<LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;muoviMuro
+<LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdPrintDx
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FIQ_Handler
+</UL>
+
+<P><STRONG><a name="[45]"></a>s5_control</STRONG> (ARM, 368 bytes, Stack size 8 bytes, main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 260<LI>Call Chain = s5_control &rArr; muoviPedina &rArr; rimuoviPedina
+</UL>
+<BR>[Calls]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rimuoviMuro
+<LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;muoviPedina
+<LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdPrintDx
+<LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initMuro
+<LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disegnaMuro
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FIQ_Handler
+</UL>
+
+<P><STRONG><a name="[49]"></a>s3_control</STRONG> (ARM, 612 bytes, Stack size 8 bytes, main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 260<LI>Call Chain = s3_control &rArr; muoviPedina &rArr; rimuoviPedina
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
+<LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;muoviPedina
+<LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;muoviMuro
+<LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdPrintDx
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FIQ_Handler
+</UL>
+
+<P><STRONG><a name="[4a]"></a>s2_control</STRONG> (ARM, 276 bytes, Stack size 8 bytes, main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = s2_control &rArr; orientaMuro &rArr; rimuoviMuro
+</UL>
+<BR>[Calls]<UL><LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;orientaMuro
+<LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdPrintDx
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FIQ_Handler
+</UL>
+
+<P><STRONG><a name="[9]"></a>FIQ_Handler</STRONG> (ARM, 884 bytes, Stack size 32 bytes, main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 340<LI>Call Chain = FIQ_Handler &rArr; s9_control &rArr; controlla_mossa &rArr; set_pedina &rArr; muoviPedina &rArr; rimuoviPedina
+</UL>
+<BR>[Calls]<UL><LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scriviUartChar
+<LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;restart_countdown
+<LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;reset_intr_timer0
+<LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;putcXY
+<LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prelevaBuffer
+<LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;leggiUart
+<LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdPrintDx
+<LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dec_countdown
+<LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;controlla_mossa
+<LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bufferPronto
+<LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;s2_control
+<LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;s3_control
+<LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;s5_control
+<LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;s6_control
+<LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;s7_control
+<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;s8_control
+<LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;s9_control
+<LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;s4_control
+<LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;decisioneColore
+<LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;controlla_vittoria
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[57]"></a>initPedina</STRONG> (ARM, 40 bytes, Stack size 0 bytes, pedina.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_gioco
+</UL>
+
+<P><STRONG><a name="[32]"></a>disegnaPedina</STRONG> (ARM, 280 bytes, Stack size 28 bytes, pedina.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = disegnaPedina
+</UL>
+<BR>[Called By]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;muoviPedina
+<LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[50]"></a>rimuoviPedina</STRONG> (ARM, 124 bytes, Stack size 28 bytes, pedina.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = rimuoviPedina
+</UL>
+<BR>[Called By]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;muoviPedina
+</UL>
+
+<P><STRONG><a name="[41]"></a>muoviPedina</STRONG> (ARM, 100 bytes, Stack size 224 bytes, pedina.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 252<LI>Call Chain = muoviPedina &rArr; rimuoviPedina
+</UL>
+<BR>[Calls]<UL><LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+<LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rimuoviPedina
+<LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disegnaPedina
+</UL>
+<BR>[Called By]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_pedina
+<LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;s3_control
+<LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;s5_control
+<LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;s6_control
+<LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;s7_control
+<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;s8_control
+</UL>
+
+<P><STRONG><a name="[46]"></a>initMuro</STRONG> (ARM, 16 bytes, Stack size 0 bytes, muro.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;s5_control
+</UL>
+
+<P><STRONG><a name="[47]"></a>disegnaMuro</STRONG> (ARM, 392 bytes, Stack size 16 bytes, muro.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = disegnaMuro
+</UL>
+<BR>[Called By]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_muro
+<LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;orientaMuro
+<LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;muoviMuro
+<LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;s5_control
+</UL>
+
+<P><STRONG><a name="[48]"></a>rimuoviMuro</STRONG> (ARM, 272 bytes, Stack size 16 bytes, muro.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = rimuoviMuro
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;orientaMuro
+<LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;muoviMuro
+<LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;s5_control
+</UL>
+
+<P><STRONG><a name="[42]"></a>muoviMuro</STRONG> (ARM, 60 bytes, Stack size 20 bytes, muro.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = muoviMuro &rArr; rimuoviMuro
+</UL>
+<BR>[Calls]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rimuoviMuro
+<LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disegnaMuro
+</UL>
+<BR>[Called By]<UL><LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;s3_control
+<LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;s6_control
+<LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;s7_control
+<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;s8_control
+</UL>
+
+<P><STRONG><a name="[4b]"></a>orientaMuro</STRONG> (ARM, 52 bytes, Stack size 16 bytes, muro.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = orientaMuro &rArr; rimuoviMuro
+</UL>
+<BR>[Calls]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rimuoviMuro
+<LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disegnaMuro
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;s2_control
+</UL>
+
+<P><STRONG><a name="[38]"></a>piazzaMuro</STRONG> (ARM, 272 bytes, Stack size 16 bytes, muro.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = piazzaMuro
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;s9_control
+<LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[51]"></a>itoa</STRONG> (ARM, 52 bytes, Stack size 16 bytes, gestionestampastringhe.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = itoa &rArr; __aeabi_idivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_idivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;restart_countdown
+<LI><a href="#[34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_countdown
+<LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dec_countdown
+</UL>
+
+<P><STRONG><a name="[53]"></a>printXY</STRONG> (ARM, 96 bytes, Stack size 24 bytes, gestionestampastringhe.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = printXY
+</UL>
+<BR>[Calls]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Data_Left_WR
+<LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Command_Left
+</UL>
+<BR>[Called By]<UL><LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;putc
+<LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;restart_countdown
+<LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;putcXY
+<LI><a href="#[34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_countdown
+<LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dec_countdown
+</UL>
+
+<P><STRONG><a name="[20]"></a>putcXY</STRONG> (ARM, 332 bytes, Stack size 16 bytes, gestionestampastringhe.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = putcXY &rArr; printXY
+</UL>
+<BR>[Calls]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printXY
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inviaMossa
+<LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FIQ_Handler
+</UL>
+
+<P><STRONG><a name="[56]"></a>putc</STRONG> (ARM, 476 bytes, Stack size 8 bytes, gestionestampastringhe.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = putc &rArr; printXY
+</UL>
+<BR>[Calls]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printXY
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
+</UL>
+
+<P><STRONG><a name="[2e]"></a>puts</STRONG> (ARM, 108 bytes, Stack size 16 bytes, gestionestampastringhe.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = puts &rArr; putc &rArr; printXY
+</UL>
+<BR>[Calls]<UL><LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;putc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;s3_control
+<LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;s6_control
+<LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;s7_control
+<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;s8_control
+<LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;s9_control
+<LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[34]"></a>init_countdown</STRONG> (ARM, 532 bytes, Stack size 24 bytes, gestionestampastringhe.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = init_countdown &rArr; printXY
+</UL>
+<BR>[Calls]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printXY
+<LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;itoa
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[4d]"></a>dec_countdown</STRONG> (ARM, 236 bytes, Stack size 24 bytes, gestionestampastringhe.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = dec_countdown &rArr; printXY
+</UL>
+<BR>[Calls]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printXY
+<LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;itoa
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FIQ_Handler
+</UL>
+
+<P><STRONG><a name="[3f]"></a>restart_countdown</STRONG> (ARM, 256 bytes, Stack size 24 bytes, gestionestampastringhe.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = restart_countdown &rArr; printXY
+</UL>
+<BR>[Calls]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printXY
+<LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;itoa
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;s9_control
+<LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FIQ_Handler
+</UL>
+
+<P><STRONG><a name="[30]"></a>init_gioco</STRONG> (ARM, 636 bytes, Stack size 24 bytes, gioco.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = init_gioco
+</UL>
+<BR>[Calls]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initPedina
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[59]"></a>controlla_pedina</STRONG> (ARM, 1524 bytes, Stack size 8 bytes, gioco.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = controlla_pedina
+</UL>
+<BR>[Called By]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_pedina
+</UL>
+
+<P><STRONG><a name="[58]"></a>set_pedina</STRONG> (ARM, 148 bytes, Stack size 24 bytes, gioco.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 276<LI>Call Chain = set_pedina &rArr; muoviPedina &rArr; rimuoviPedina
+</UL>
+<BR>[Calls]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;controlla_pedina
+<LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;muoviPedina
+</UL>
+<BR>[Called By]<UL><LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;controlla_mossa
+</UL>
+
+<P><STRONG><a name="[5a]"></a>visitaAmpiezza</STRONG> (ARM, 1900 bytes, Stack size 16 bytes, gioco.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = visitaAmpiezza &rArr; putItem &rArr; __aeabi_idivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;putItem
+<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;isFull
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;isEmpty
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getItem
+</UL>
+<BR>[Called By]<UL><LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;percorso_minimo
+</UL>
+
+<P><STRONG><a name="[35]"></a>percorso_minimo</STRONG> (ARM, 628 bytes, Stack size 40 bytes, gioco.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = percorso_minimo &rArr; visitaAmpiezza &rArr; putItem &rArr; __aeabi_idivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;putItem
+<LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;popItem
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;isEmpty
+<LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initCoda
+<LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;visitaAmpiezza
+</UL>
+<BR>[Called By]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prova_muro
+<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;controllo_muro
+<LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[61]"></a>controllo_muro</STRONG> (ARM, 1180 bytes, Stack size 48 bytes, gioco.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = controllo_muro &rArr; percorso_minimo &rArr; visitaAmpiezza &rArr; putItem &rArr; __aeabi_idivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;percorso_minimo
+</UL>
+<BR>[Called By]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prova_muro
+<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_muro
+</UL>
+
+<P><STRONG><a name="[63]"></a>set_muro</STRONG> (ARM, 496 bytes, Stack size 40 bytes, gioco.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 168<LI>Call Chain = set_muro &rArr; controllo_muro &rArr; percorso_minimo &rArr; visitaAmpiezza &rArr; putItem &rArr; __aeabi_idivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;controllo_muro
+<LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disegnaMuro
+</UL>
+<BR>[Called By]<UL><LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;controlla_mossa
+</UL>
+
+<P><STRONG><a name="[39]"></a>controlla_mossa</STRONG> (ARM, 144 bytes, Stack size 24 bytes, gioco.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 300<LI>Call Chain = controlla_mossa &rArr; set_pedina &rArr; muoviPedina &rArr; rimuoviPedina
+</UL>
+<BR>[Calls]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_muro
+<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_pedina
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;s9_control
+<LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FIQ_Handler
+</UL>
+
+<P><STRONG><a name="[64]"></a>prova_muro</STRONG> (ARM, 732 bytes, Stack size 32 bytes, gioco.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 160<LI>Call Chain = prova_muro &rArr; controllo_muro &rArr; percorso_minimo &rArr; visitaAmpiezza &rArr; putItem &rArr; __aeabi_idivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;controllo_muro
+<LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;percorso_minimo
+</UL>
+<BR>[Called By]<UL><LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scegli_muro
+</UL>
+
+<P><STRONG><a name="[37]"></a>scegli_muro</STRONG> (ARM, 3948 bytes, Stack size 256 bytes, gioco.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 416<LI>Call Chain = scegli_muro &rArr; prova_muro &rArr; controllo_muro &rArr; percorso_minimo &rArr; visitaAmpiezza &rArr; putItem &rArr; __aeabi_idivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_idivmod
+<LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;srand
+<LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rand
+<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prova_muro
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[2b]"></a>bufferInit</STRONG> (ARM, 32 bytes, Stack size 0 bytes, uart.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1c]"></a>inserisciBuffer</STRONG> (ARM, 112 bytes, Stack size 16 bytes, uart.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = inserisciBuffer &rArr; __aeabi_idivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_idivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;leggiUart
+<LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;s4_control
+<LI><a href="#[1b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inviaMossa
+</UL>
+
+<P><STRONG><a name="[3b]"></a>prelevaBuffer</STRONG> (ARM, 84 bytes, Stack size 16 bytes, uart.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = prelevaBuffer &rArr; __aeabi_idivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_idivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scriviUart
+<LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;decisioneColore
+<LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FIQ_Handler
+</UL>
+
+<P><STRONG><a name="[4f]"></a>bufferPronto</STRONG> (ARM, 12 bytes, Stack size 0 bytes, uart.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FIQ_Handler
+</UL>
+
+<P><STRONG><a name="[2d]"></a>initUart</STRONG> (ARM, 68 bytes, Stack size 0 bytes, uart.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[4e]"></a>leggiUart</STRONG> (ARM, 236 bytes, Stack size 16 bytes, uart.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = leggiUart &rArr; inserisciBuffer &rArr; __aeabi_idivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inserisciBuffer
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FIQ_Handler
+</UL>
+
+<P><STRONG><a name="[1d]"></a>scriviUart</STRONG> (ARM, 68 bytes, Stack size 16 bytes, uart.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = scriviUart &rArr; prelevaBuffer &rArr; __aeabi_idivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prelevaBuffer
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;s4_control
+<LI><a href="#[1b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inviaMossa
+</UL>
+
+<P><STRONG><a name="[3c]"></a>scriviUartChar</STRONG> (ARM, 12 bytes, Stack size 0 bytes, uart.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;decisioneColore
+<LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FIQ_Handler
+</UL>
+
+<P><STRONG><a name="[2c]"></a>settaFaseIniziale</STRONG> (ARM, 8 bytes, Stack size 0 bytes, uart.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[93]"></a>faseBuffer</STRONG> (ARM, 12 bytes, Stack size 0 bytes, uart.o(.text), UNUSED)
+
+<P><STRONG><a name="[5f]"></a>initCoda</STRONG> (ARM, 16 bytes, Stack size 0 bytes, coda.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;percorso_minimo
+</UL>
+
+<P><STRONG><a name="[5c]"></a>getItem</STRONG> (ARM, 56 bytes, Stack size 8 bytes, coda.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = getItem &rArr; __aeabi_idivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_idivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;visitaAmpiezza
+</UL>
+
+<P><STRONG><a name="[5b]"></a>putItem</STRONG> (ARM, 60 bytes, Stack size 16 bytes, coda.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = putItem &rArr; __aeabi_idivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_idivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;visitaAmpiezza
+<LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;percorso_minimo
+</UL>
+
+<P><STRONG><a name="[5e]"></a>isEmpty</STRONG> (ARM, 36 bytes, Stack size 0 bytes, coda.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;visitaAmpiezza
+<LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;percorso_minimo
+</UL>
+
+<P><STRONG><a name="[5d]"></a>isFull</STRONG> (ARM, 56 bytes, Stack size 8 bytes, coda.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = isFull &rArr; __aeabi_idivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_idivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;visitaAmpiezza
+</UL>
+
+<P><STRONG><a name="[60]"></a>popItem</STRONG> (ARM, 52 bytes, Stack size 0 bytes, coda.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;percorso_minimo
+</UL>
+
+<P><STRONG><a name="[66]"></a>rand</STRONG> (ARM, 52 bytes, Stack size 0 bytes, random.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scegli_muro
+</UL>
+
+<P><STRONG><a name="[65]"></a>srand</STRONG> (ARM, 12 bytes, Stack size 0 bytes, random.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scegli_muro
+</UL>
+
+<P><STRONG><a name="[23]"></a>TargetResetInit</STRONG> (ARM, 144 bytes, Stack size 0 bytes, board.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[24]"></a>PortInit</STRONG> (ARM, 76 bytes, Stack size 0 bytes, board.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[25]"></a>ExternalInterruptInit</STRONG> (ARM, 32 bytes, Stack size 0 bytes, board.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[26]"></a>LedSet</STRONG> (ARM, 420 bytes, Stack size 0 bytes, board.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[54]"></a>Lcd_Command_Left</STRONG> (ARM, 36 bytes, Stack size 0 bytes, lcd_ym12864i.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdPrintSx
+<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Display_Pic_128X64
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Init
+<LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printXY
+<LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdPrintSxUP
+<LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Clear_Left
+<LI><a href="#[2a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Clear
+</UL>
+
+<P><STRONG><a name="[67]"></a>Lcd_Command_Right</STRONG> (ARM, 36 bytes, Stack size 0 bytes, lcd_ym12864i.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Display_Pic_128X64
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Init
+<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Clear_Right
+<LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdPrintDx
+<LI><a href="#[2a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Clear
+</UL>
+
+<P><STRONG><a name="[55]"></a>Lcd_Data_Left_WR</STRONG> (ARM, 36 bytes, Stack size 0 bytes, lcd_ym12864i.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdPrintSx
+<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Display_Pic_128X64
+<LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printXY
+<LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdPrintSxUP
+<LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Clear_Left
+<LI><a href="#[2a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Clear
+</UL>
+
+<P><STRONG><a name="[68]"></a>Lcd_Data_Right_WR</STRONG> (ARM, 36 bytes, Stack size 0 bytes, lcd_ym12864i.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Display_Pic_128X64
+<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Clear_Right
+<LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdPrintDx
+<LI><a href="#[2a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Clear
+</UL>
+
+<P><STRONG><a name="[94]"></a>Lcd_Data_Left_RD</STRONG> (ARM, 36 bytes, Stack size 0 bytes, lcd_ym12864i.o(.text), UNUSED)
+
+<P><STRONG><a name="[95]"></a>Lcd_Data_Right_RD</STRONG> (ARM, 36 bytes, Stack size 0 bytes, lcd_ym12864i.o(.text), UNUSED)
+
+<P><STRONG><a name="[2a]"></a>Lcd_Clear</STRONG> (ARM, 108 bytes, Stack size 4 bytes, lcd_ym12864i.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = Lcd_Clear
+</UL>
+<BR>[Calls]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Data_Right_WR
+<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Command_Right
+<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Data_Left_WR
+<LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Command_Left
+</UL>
+<BR>[Called By]<UL><LI><a href="#[29]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdStart
+<LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[69]"></a>Lcd_Clear_Right</STRONG> (ARM, 84 bytes, Stack size 4 bytes, lcd_ym12864i.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Data_Right_WR
+<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Command_Right
+</UL>
+
+<P><STRONG><a name="[2f]"></a>Lcd_Clear_Left</STRONG> (ARM, 84 bytes, Stack size 4 bytes, lcd_ym12864i.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = Lcd_Clear_Left
+</UL>
+<BR>[Calls]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Data_Left_WR
+<LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Command_Left
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[6a]"></a>Lcd_Init</STRONG> (ARM, 124 bytes, Stack size 4 bytes, lcd_ym12864i.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = Lcd_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Command_Right
+<LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Command_Left
+</UL>
+<BR>[Called By]<UL><LI><a href="#[29]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdStart
+</UL>
+
+<P><STRONG><a name="[6c]"></a>Lcd_Backlight</STRONG> (ARM, 56 bytes, Stack size 0 bytes, lcd_ym12864i.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[29]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdStart
+</UL>
+
+<P><STRONG><a name="[6b]"></a>Lcd_Display_Pic_128X64</STRONG> (ARM, 148 bytes, Stack size 12 bytes, lcd_ym12864i.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Data_Right_WR
+<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Command_Right
+<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Data_Left_WR
+<LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Command_Left
+</UL>
+
+<P><STRONG><a name="[29]"></a>lcdStart</STRONG> (ARM, 28 bytes, Stack size 4 bytes, lcd_ym12864i.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = lcdStart &rArr; Lcd_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Backlight
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Init
+<LI><a href="#[2a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Clear
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[6d]"></a>lcdPrintSx</STRONG> (ARM, 188 bytes, Stack size 16 bytes, lcd_ym12864i.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Data_Left_WR
+<LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Command_Left
+</UL>
+
+<P><STRONG><a name="[33]"></a>lcdPrintSxUP</STRONG> (ARM, 188 bytes, Stack size 16 bytes, lcd_ym12864i.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = lcdPrintSxUP
+</UL>
+<BR>[Calls]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Data_Left_WR
+<LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Command_Left
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;s9_control
+<LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1f]"></a>lcdPrintDx</STRONG> (ARM, 188 bytes, Stack size 16 bytes, lcd_ym12864i.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = lcdPrintDx
+</UL>
+<BR>[Calls]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Data_Right_WR
+<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Command_Right
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;s2_control
+<LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;s3_control
+<LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;s5_control
+<LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;s6_control
+<LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;s7_control
+<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;s8_control
+<LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[1b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inviaMossa
+<LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FIQ_Handler
+</UL>
+
+<P><STRONG><a name="[27]"></a>init_timer</STRONG> (ARM, 60 bytes, Stack size 0 bytes, timer.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[96]"></a>stop_timer0</STRONG> (ARM, 16 bytes, Stack size 0 bytes, timer.o(.text), UNUSED)
+
+<P><STRONG><a name="[97]"></a>resume_timer0</STRONG> (ARM, 16 bytes, Stack size 0 bytes, timer.o(.text), UNUSED)
+
+<P><STRONG><a name="[4c]"></a>reset_intr_timer0</STRONG> (ARM, 12 bytes, Stack size 0 bytes, timer.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FIQ_Handler
+</UL>
+
+<P><STRONG><a name="[62]"></a>__aeabi_memcpy</STRONG> (ARM, 0 bytes, Stack size 0 bytes, rt_memcpy.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;controllo_muro
+</UL>
+
+<P><STRONG><a name="[6e]"></a>__rt_memcpy</STRONG> (ARM, 212 bytes, Stack size 0 bytes, rt_memcpy.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+</UL>
+
+<P><STRONG><a name="[98]"></a>_memcpy_lastbytes</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rt_memcpy.o(.text), UNUSED)
+
+<P><STRONG><a name="[31]"></a>__aeabi_memcpy4</STRONG> (ARM, 0 bytes, Stack size 8 bytes, rt_memcpy_w.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __aeabi_memcpy4
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_memcpy
+<LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;muoviPedina
+<LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[99]"></a>__aeabi_memcpy8</STRONG> (ARM, 0 bytes, Stack size 8 bytes, rt_memcpy_w.o(.text), UNUSED)
+
+<P><STRONG><a name="[9a]"></a>__rt_memcpy_w</STRONG> (ARM, 100 bytes, Stack size 8 bytes, rt_memcpy_w.o(.text), UNUSED)
+
+<P><STRONG><a name="[9b]"></a>_memcpy_lastbytes_aligned</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rt_memcpy_w.o(.text), UNUSED)
+
+<P><STRONG><a name="[9c]"></a>__aeabi_idiv</STRONG> (ARM, 0 bytes, Stack size 8 bytes, aeabi_sdiv.o(.text), UNUSED)
+
+<P><STRONG><a name="[52]"></a>__aeabi_idivmod</STRONG> (ARM, 384 bytes, Stack size 8 bytes, aeabi_sdiv.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __aeabi_idivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;putItem
+<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;isFull
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getItem
+<LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;itoa
+<LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scegli_muro
+<LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prelevaBuffer
+<LI><a href="#[1c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inserisciBuffer
+</UL>
+
+<P><STRONG><a name="[9d]"></a>__use_two_region_memory</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+
+<P><STRONG><a name="[9e]"></a>__rt_heap_escrow$2region</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+
+<P><STRONG><a name="[9f]"></a>__rt_heap_expand$2region</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+
+<P><STRONG><a name="[12]"></a>__user_setup_stackheap</STRONG> (ARM, 96 bytes, Stack size 8 bytes, sys_stackheap_outer.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
+<LI>Call Chain = __user_setup_stackheap
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_perproc_libspace
+<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_initial_stackheap
+</UL>
+<BR>[Called By]<UL><LI><a href="#[11]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_sh
+</UL>
+
+<P><STRONG><a name="[16]"></a>exit</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, exit.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit (via Veneer)
+<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_call_atexit_fns (Weak Reference)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[15]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
+</UL>
+
+<P><STRONG><a name="[a0]"></a>__user_libspace</STRONG> (ARM, 12 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
+
+<P><STRONG><a name="[6f]"></a>__user_perproc_libspace</STRONG> (ARM, 0 bytes, Stack size 0 bytes, libspace.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[12]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
+</UL>
+
+<P><STRONG><a name="[a1]"></a>__user_perthread_libspace</STRONG> (ARM, 0 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
+
+<P><STRONG><a name="[1a]"></a>_sys_exit</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, sys_exit.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[19]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_exit (via Veneer)
+</UL>
+
+<P><STRONG><a name="[a2]"></a>__I$use$semihosting</STRONG> (ARM, 0 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
+
+<P><STRONG><a name="[a3]"></a>__use_no_semihosting_swi</STRONG> (ARM, 4 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
+
+<P><STRONG><a name="[a4]"></a>__semihosting_library_function</STRONG> (ARM, 0 bytes, Stack size unknown bytes, indicate_semi.o(.text), UNUSED)
+<P>
+<H3>
+Local Symbols
+</H3>
+<P><STRONG><a name="[4]"></a>Undef_Handler</STRONG> (ARM, 4 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Undef_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Undef_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[5]"></a>SWI_Handler</STRONG> (ARM, 4 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SWI_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SWI_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[6]"></a>PAbt_Handler</STRONG> (ARM, 4 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PAbt_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PAbt_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[7]"></a>DAbt_Handler</STRONG> (ARM, 4 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DAbt_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DAbt_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL><P>
+<H3>
+Undefined Global Symbols
+</H3>
+<P><STRONG><a name="[71]"></a>_call_atexit_fns</STRONG> (ARM, 0 bytes, Stack size 0 bytes, UNDEFINED)
+<BR><BR>[Called By]<UL><LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
+</UL>
+<HR></body></html>

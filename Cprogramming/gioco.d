@@ -1,0 +1,16 @@
+.\gioco.o: gioco.c
+.\gioco.o: gioco.h
+.\gioco.o: ../lib_uCdragon/LPC2294.h
+.\gioco.o: ../lib_uCdragon/board.h
+.\gioco.o: ../lib_uCdragon/def.h
+.\gioco.o: ../lib_uCdragon/LCD/LCD_YM12864I.h
+.\gioco.o: ../lib_uCdragon/timers/timer.h
+.\gioco.o: ../lib_uCdragon/timers/../LPC2294.h
+.\gioco.o: pedina.h
+.\gioco.o: muro.h
+.\gioco.o: gestioneStampaStringhe.h
+.\gioco.o: ../lib_uCdragon/LCD/LCD_YM12864I.h
+.\gioco.o: uart.h
+.\gioco.o: ../lib_uCdragon/LPC2294.h
+.\gioco.o: coda.h
+.\gioco.o: random.h

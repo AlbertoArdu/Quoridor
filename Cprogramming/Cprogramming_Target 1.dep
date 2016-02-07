@@ -1,0 +1,80 @@
+Dependencies for Project 'Cprogramming', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Startup.s)(0x54B7CEBA)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\main.c)(0x54BA5BA5)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\main.o --omf_browse .\main.crf --depend .\main.d)
+I (../lib_uCdragon/LPC2294.h)(0x54B7CEDC)
+I (../lib_uCdragon/board.h)(0x54B7CED6)
+I (../lib_uCdragon/def.h)(0x54B7CEDA)
+I (../lib_uCdragon/LCD/LCD_YM12864I.h)(0x54B7CEE0)
+I (../lib_uCdragon/timers/timer.h)(0x54B7CEE6)
+I (../lib_uCdragon/timers/../LPC2294.h)(0x54B7CEDC)
+I (gestioneStampaStringhe.h)(0x54B8CA56)
+I (gioco.h)(0x54BA5BA5)
+I (pedina.h)(0x54B7CEB2)
+I (muro.h)(0x54B7CEA6)
+I (uart.h)(0x54B7CED2)
+F (.\pedina.c)(0x54B7CEAA)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\pedina.o --omf_browse .\pedina.crf --depend .\pedina.d)
+I (Pedina.h)(0x54B7CEB2)
+I (../lib_uCdragon/def.h)(0x54B7CEDA)
+F (.\pedina.h)(0x54B7CEB2)()
+F (.\muro.h)(0x54B7CEA6)()
+F (.\muro.c)(0x54B7CE9E)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\muro.o --omf_browse .\muro.crf --depend .\muro.d)
+I (Muro.h)(0x54B7CEA6)
+I (../lib_uCdragon/def.h)(0x54B7CEDA)
+F (.\gestioneStampaStringhe.c)(0x54B90D26)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\gestionestampastringhe.o --omf_browse .\gestionestampastringhe.crf --depend .\gestionestampastringhe.d)
+I (gestioneStampaStringhe.h)(0x54B8CA56)
+I (../lib_uCdragon/LCD/LCD_YM12864I.h)(0x54B7CEE0)
+I (../lib_uCdragon/LCD/../def.h)(0x54B7CEDA)
+F (.\gestioneStampaStringhe.h)(0x54B8CA56)()
+F (.\gioco.c)(0x54BA5BA5)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\gioco.o --omf_browse .\gioco.crf --depend .\gioco.d)
+I (gioco.h)(0x54BA5BA5)
+I (../lib_uCdragon/LPC2294.h)(0x54B7CEDC)
+I (../lib_uCdragon/board.h)(0x54B7CED6)
+I (../lib_uCdragon/def.h)(0x54B7CEDA)
+I (../lib_uCdragon/LCD/LCD_YM12864I.h)(0x54B7CEE0)
+I (../lib_uCdragon/timers/timer.h)(0x54B7CEE6)
+I (../lib_uCdragon/timers/../LPC2294.h)(0x54B7CEDC)
+I (pedina.h)(0x54B7CEB2)
+I (muro.h)(0x54B7CEA6)
+I (gestioneStampaStringhe.h)(0x54B8CA56)
+I (uart.h)(0x54B7CED2)
+I (coda.h)(0x54B7CE2C)
+I (random.h)(0x54BA542E)
+F (.\uart.h)(0x54B7CED2)()
+F (.\gioco.h)(0x54BA5BA5)()
+F (.\uart.c)(0x54B7CECA)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\uart.o --omf_browse .\uart.crf --depend .\uart.d)
+I (uart.h)(0x54B7CED2)
+I (../lib_uCdragon/LPC2294.h)(0x54B7CEDC)
+I (../lib_uCdragon/board.h)(0x54B7CED6)
+I (../lib_uCdragon/def.h)(0x54B7CEDA)
+F (.\coda.c)(0x54B7CE26)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\coda.o --omf_browse .\coda.crf --depend .\coda.d)
+I (coda.h)(0x54B7CE2C)
+F (.\coda.h)(0x54B7CE2C)()
+F (.\random.c)(0x54B7817A)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\random.o --omf_browse .\random.crf --depend .\random.d)
+I (random.h)(0x54BA542E)
+F (.\random.h)(0x54BA542E)()
+F (..\lib_uCdragon\board.h)(0x54B7CED6)()
+F (..\lib_uCdragon\config.h)(0x54B7CED8)()
+F (..\lib_uCdragon\def.h)(0x54B7CEDA)()
+F (..\lib_uCdragon\LPC2294.h)(0x54B7CEDC)()
+F (..\lib_uCdragon\board.c)(0x54B7CED4)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\board.o --omf_browse .\board.crf --depend .\board.d)
+I (..\lib_uCdragon\config.h)(0x54B7CED8)
+I (..\lib_uCdragon\def.h)(0x54B7CEDA)
+I (..\lib_uCdragon\LPC2294.h)(0x54B7CEDC)
+I (..\lib_uCdragon\board.h)(0x54B7CED6)
+F (..\lib_uCdragon\LCD\LCD_YM12864I.c)(0x54B7CEDE)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\lcd_ym12864i.o --omf_browse .\lcd_ym12864i.crf --depend .\lcd_ym12864i.d)
+I (..\lib_uCdragon\LCD\../config.h)(0x54B7CED8)
+I (..\lib_uCdragon\LCD\../def.h)(0x54B7CEDA)
+I (..\lib_uCdragon\LCD\../LPC2294.h)(0x54B7CEDC)
+I (..\lib_uCdragon\LCD\../board.h)(0x54B7CED6)
+I (..\lib_uCdragon\LCD\LCD_YM12864I.h)(0x54B7CEE0)
+F (..\lib_uCdragon\LCD\LCD_YM12864I.h)(0x54B7CEE0)()
+F (..\lib_uCdragon\timers\timer.c)(0x54B7CEE4)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\timer.o --omf_browse .\timer.crf --depend .\timer.d)
+I (..\lib_uCdragon\timers\../LPC2294.h)(0x54B7CEDC)
+I (..\lib_uCdragon\timers\timer.h)(0x54B7CEE6)
+I (..\lib_uCdragon\timers\../def.h)(0x54B7CEDA)
+F (..\lib_uCdragon\timers\timer.h)(0x54B7CEE6)()
+F (..\lib_uCdragon\timers\timer1.c)(0x54B7CEE8)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\timer1.o --omf_browse .\timer1.crf --depend .\timer1.d)
+I (..\lib_uCdragon\timers\../LPC2294.h)(0x54B7CEDC)
+I (..\lib_uCdragon\timers\timer.h)(0x54B7CEE6)
+I (..\lib_uCdragon\timers\../def.h)(0x54B7CEDA)
+F (..\lib_uCdragon\timers\timer1.h)(0x54B7CEEA)()

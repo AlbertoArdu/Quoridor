@@ -1,0 +1,18 @@
+--cpu ARM7TDMI
+".\startup.o"
+".\main.o"
+".\pedina.o"
+".\muro.o"
+".\gestionestampastringhe.o"
+".\gioco.o"
+".\uart.o"
+".\coda.o"
+".\random.o"
+".\board.o"
+".\lcd_ym12864i.o"
+".\timer.o"
+".\timer1.o"
+--strict --scatter ".\Cprogramming.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Cprogramming.map" -o .\Cprogramming.axf
